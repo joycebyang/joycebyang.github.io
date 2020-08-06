@@ -1,4 +1,8 @@
-body{
-  font-family:helvetica, arial, sans-serif;
-  margin: 2em;
+.topnav{
+  float: left;
+  color: #0f0f0f;
+  text-align: center;
+  padding: 12px 120px;
+  text-decoration: none;
+  font-size: 15px;
 }
