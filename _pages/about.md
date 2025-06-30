@@ -24,7 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I’m a third-year Computer Science undergrad @ Cornell University. I work in the [EmPRISE Lab](https://emprise.cs.cornell.edu/) under [Prof. Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh), where my research focuses on human-robot interaction and leveraging robots to assist humans with daily living activities in home environments. 
+Hi! I’m a third-year Computer Science undergrad @ Cornell University. I work in the [EmPRISE Lab](https://emprise.cs.cornell.edu/) under [Prof. Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh), where my research focuses on human-robot interaction and multi-agent robotic systems for bed-to-wheelchair human transfers. 
 
 Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation.
+
+**I want to develop assistive robots that support people with mobility limitations in carrying out everyday tasks.** I’m particularly interested in how we can combine machine learning with formal safety guarantees to build systems that not only act intelligently, but also reliably and safely around people.
 
