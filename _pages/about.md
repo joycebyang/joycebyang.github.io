@@ -5,7 +5,7 @@ permalink: /
 subtitle:
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info:
@@ -28,5 +28,5 @@ Hi! I’m a third-year Computer Science undergrad @ Cornell University. I work i
 
 Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation.
 
-**I want to develop assistive robots that support people with mobility limitations in carrying out everyday tasks.** I’m particularly interested in how we can combine machine learning with formal safety guarantees to build systems that not only act intelligently, but also reliably and safely around people.
+**I want to develop assistive robots that support people with mobility limitations in carrying out everyday tasks.** I’m also interested in how we can combine machine learning with formal safety guarantees to build systems that not only act intelligently, but also reliably around people.
 
