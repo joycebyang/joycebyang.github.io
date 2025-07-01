@@ -440,16 +440,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-was-featured-on-cornell-chronicle-s-article-summer-program-gives-undergraduates-a-taste-of-research-life-and-cornell-bowers-cis-spotlight",
+          title: 'I was featured on Cornell Chronicle’s article Summer program gives undergraduates a taste...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-our-paper-cart-mpc-coordinating-assistive-devices-for-robot-assisted-transferring-with-multi-agent-model-predictive-control-was-accepted-to-hri-2025-check-out-the-project-website-here-https-emprise-cs-cornell-edu-cart-mpc",
+          title: 'Our paper CART-MPC: Coordinating Assistive Devices for Robot-Assisted Transferring with Multi-Agent Model Predictive...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-started-my-summer-internship-at-sia-lab-under-prof-somil-bansal",
+          title: 'I started my summer internship at SIA Lab under Prof. Somil Bansal!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
