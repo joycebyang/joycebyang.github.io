@@ -24,13 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I’m a third-year Computer Science undergrad @ Cornell University.
+I’m a third-year Computer Science undergrad @ Cornell University.
 
 I'm working at [EmPRISE Lab](https://emprise.cs.cornell.edu/) under [Prof. Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh), focusing on human-robot interaction and multi-agent robotic systems for bed-to-wheelchair human transfers. 
 
-Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). 
-
-I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation.
+Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation.
 
 [Email](mailto:jby33@cornell.edu) / [Google Scholar](https://scholar.google.com/citations?user=5RYnXIUAAAAJ&hl=en) / [LinkedIn](https://www.linkedin.com/in/joyce-b-yang/)
 
