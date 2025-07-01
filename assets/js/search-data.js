@@ -443,7 +443,7 @@ ninja.data = [{
             },},{id: "news-i-was-featured-on-cornell-chronicle-s-article-summer-program-gives-undergraduates-a-taste-of-research-life-and-cornell-bowers-cis-spotlight",
           title: 'I was featured on Cornell Chronicle’s article Summer program gives undergraduates a taste...',
           description: "",
-          section: "News",},{id: "news-our-paper-cart-mpc-coordinating-assistive-devices-for-robot-assisted-transferring-with-multi-agent-model-predictive-control-was-accepted-to-hri-2025-check-out-the-project-website-here-https-emprise-cs-cornell-edu-cart-mpc",
+          section: "News",},{id: "news-our-paper-cart-mpc-coordinating-assistive-devices-for-robot-assisted-transferring-with-multi-agent-model-predictive-control-was-accepted-to-hri-2025-check-out-the-project-website-here",
           title: 'Our paper CART-MPC: Coordinating Assistive Devices for Robot-Assisted Transferring with Multi-Agent Model Predictive...',
           description: "",
           section: "News",},{id: "news-i-started-my-summer-internship-at-sia-lab-under-prof-somil-bansal",
