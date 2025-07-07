@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a third-year Computer Science undergrad @ Cornell University.
+👋 Hi, I'm Joyce. I’m a third-year Computer Science undergrad @ Cornell University.
 
 I'm working at [EmPRISE Lab](https://emprise.cs.cornell.edu/) under [Prof. Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh), focusing on human-robot interaction and multi-agent robotic systems for bed-to-wheelchair human transfers. 
 
