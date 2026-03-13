@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released [CodeClash: Benchmarking Goal-Oriented Software Engineering](https://codeclash.ai/)! check out [the paper](https://arxiv.org/pdf/2511.00839) on arXiv.
+We released [CodeClash: Benchmarking Goal-Oriented Software Engineering](https://codeclash.ai/)! Check out [the paper](https://arxiv.org/pdf/2511.00839) on arXiv.
