@@ -394,7 +394,7 @@ ninja.data = [{
           title: 'I started my summer internship at SIA Lab under Prof. Somil Bansal!',
           description: "",
           section: "News",},{id: "news-we-released-codeclash-benchmarking-goal-oriented-software-engineering-check-out-the-paper-on-arxiv",
-          title: 'We released CodeClash: Benchmarking Goal-Oriented Software Engineering! check out the paper on arXiv....',
+          title: 'We released CodeClash: Benchmarking Goal-Oriented Software Engineering! Check out the paper on arXiv....',
           description: "",
           section: "News",},{id: "news-our-paper-brick-by-brick-using-collaborative-robotics-to-combat-social-isolation-in-public-spaces-was-accepted-to-hri-2026-s-student-design-challenge-see-you-in-edinburgh-️",
           title: 'Our paper Brick by Brick: Using Collaborative Robotics to Combat Social Isolation in...',
