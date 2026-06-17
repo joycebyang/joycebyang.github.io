@@ -391,7 +391,7 @@ ninja.data = [{
           title: 'Our paper CART-MPC: Coordinating Assistive Devices for Robot-Assisted Transferring with Multi-Agent Model Predictive...',
           description: "",
           section: "News",},{id: "news-i-started-my-summer-internship-at-sia-lab-under-prof-somil-bansal",
-          title: 'I started my summer internship at SIA Lab under Prof. Somil Bansal!',
+          title: 'I started my summer internship at SIA Lab under Prof. Somil Bansal',
           description: "",
           section: "News",},{id: "news-we-released-codeclash-benchmarking-goal-oriented-software-engineering-check-out-the-paper-on-arxiv",
           title: 'We released CodeClash: Benchmarking Goal-Oriented Software Engineering! Check out the paper on arXiv....',
