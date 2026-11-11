@@ -1,0 +1,421 @@
+/*******************************************************************************
+ * Slate: minimal site design (IBM Plex Sans, slate-teal accent).
+ * Loaded last in assets/css/main.scss so it overrides the al-folio defaults.
+ * Colors come from the tokens in _themes.scss (light and dark).
+ ******************************************************************************/
+
+$slate-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$slate-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+$slate-phone: 576px;
+
+// ---------------------------------------------------------------------------
+// Base type
+// ---------------------------------------------------------------------------
+
+body {
+  font-family: $slate-sans;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $slate-sans;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--global-heading-color);
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-underline-offset: 3px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Navbar: name on the left, quiet text links on the right, no rule
+// ---------------------------------------------------------------------------
+
+body.fixed-top-nav {
+  padding-top: 72px;
+}
+
+.navbar {
+  border-bottom: 0;
+  opacity: 1;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-size: 14.5px;
+}
+
+.navbar.navbar-light {
+  .navbar-brand {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--global-heading-color);
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color-light);
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+    &:hover {
+      color: var(--global-heading-color);
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 400;
+    color: var(--global-heading-color);
+
+    &:hover {
+      color: var(--global-heading-color);
+    }
+  }
+}
+
+#light-toggle {
+  color: var(--global-text-color-light);
+  font-size: 15px;
+}
+
+// ---------------------------------------------------------------------------
+// Page headers (Publications, Blog, …)
+// ---------------------------------------------------------------------------
+
+.post-header .post-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.post-description {
+  font-size: 14.5px;
+  color: var(--global-text-color-light);
+}
+
+// ---------------------------------------------------------------------------
+// Homepage
+// ---------------------------------------------------------------------------
+
+.post.home {
+  margin-top: -1.5rem;
+}
+
+.home-intro {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.home-photo {
+  flex: none;
+  width: 104px;
+  height: 104px;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+h1.home-name {
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+p.home-role {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+p.home-role span.cornell {
+  color: var(--global-cornell-color);
+}
+
+.home-bio p {
+  margin: 0 0 14px;
+}
+
+p.home-links {
+  font-size: 15px;
+  color: var(--global-text-color-light);
+
+  a {
+    font-weight: 500;
+  }
+}
+
+h2.home-heading {
+  font-size: 20px;
+  margin: 48px 0 12px;
+}
+
+// ---------------------------------------------------------------------------
+// News
+// ---------------------------------------------------------------------------
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 16px;
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  time {
+    font-family: $slate-mono;
+    font-size: 13px;
+    color: var(--global-text-color-light);
+    padding-top: 1px;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.news-more {
+  summary {
+    list-style: none;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--global-theme-color);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  &[open] summary {
+    display: none;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Publications: image-left rows, first-author rows tinted
+// ---------------------------------------------------------------------------
+
+.bibsearch-form-input {
+  font-family: $slate-sans;
+  font-size: 14.5px;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  box-shadow: none;
+  border-radius: 8px;
+
+  &:focus {
+    border-color: var(--global-theme-color);
+  }
+}
+
+p.pub-lead {
+  font-size: 14.5px;
+  color: var(--global-text-color-light);
+  margin: -2px 0 12px;
+}
+
+.publications {
+  margin-top: 0;
+
+  h2.bibliography {
+    font-size: 15px;
+    font-family: $slate-mono;
+    font-weight: 500;
+    text-align: left;
+    color: var(--global-text-color-light);
+    border-top: 0;
+    padding-top: 0;
+    margin: 32px 0 4px;
+  }
+
+  ol.bibliography {
+    margin: 0;
+
+    li {
+      margin-bottom: 4px;
+
+      .pub-row {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 24px;
+        align-items: center;
+        padding: 16px;
+        margin: 0 -16px;
+        border-radius: 8px;
+
+        &.pub-no-thumb {
+          grid-template-columns: 1fr;
+        }
+
+        &.pub-first {
+          background-color: var(--global-tint-color);
+        }
+      }
+
+      .pub-thumb {
+        figure {
+          margin: 0;
+        }
+
+        img {
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+          border-radius: 4px;
+          box-shadow: none;
+        }
+      }
+
+      .pub-body {
+        min-width: 0;
+      }
+
+      div.abstract.hidden {
+        border-color: transparent;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--global-heading-color);
+        margin-bottom: 4px;
+      }
+
+      .author {
+        font-size: 14.5px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+
+        > em {
+          border-bottom: 0;
+          font-style: normal;
+          font-weight: 600;
+          color: var(--global-heading-color);
+        }
+
+        a {
+          color: inherit;
+          border-bottom: 1px dotted var(--global-text-color-light);
+        }
+      }
+
+      .periodical {
+        font-size: 14.5px;
+        line-height: 1.5;
+        margin-bottom: 6px;
+      }
+
+      .links {
+        font-size: 14px;
+        color: var(--global-text-color-light);
+
+        a.btn {
+          display: inline;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 0;
+          color: var(--global-theme-color);
+          border: 0;
+          padding: 0;
+          margin: 0;
+          line-height: inherit;
+          background: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+            text-decoration: underline;
+          }
+        }
+
+        a.btn + a.btn::before {
+          content: "/";
+          display: inline-block;
+          margin: 0 0.55em;
+          color: var(--global-text-color-light);
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Footer: plain line, no rule
+// ---------------------------------------------------------------------------
+
+footer.sticky-bottom {
+  border-top: 0;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  font-size: 13px;
+
+  .container {
+    text-align: left;
+    color: var(--global-text-color-light);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Phone
+// ---------------------------------------------------------------------------
+
+@media (max-width: $slate-phone) {
+  .home-intro {
+    align-items: flex-start;
+  }
+
+  .home-photo,
+  .home-photo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1.home-name {
+    font-size: 26px;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .publications ol.bibliography li .pub-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .publications ol.bibliography li .pub-thumb {
+    max-width: 320px;
+  }
+}

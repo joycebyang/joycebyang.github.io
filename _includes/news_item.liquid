@@ -1,0 +1,10 @@
+<li>
+  <time datetime="{{ include.item.date | date: '%Y-%m-%d' }}">{{ include.item.date | date: '%b %Y' }}</time>
+  <span>
+    {%- if include.item.inline -%}
+      {{ include.item.content | remove: '<p>' | remove: '</p>' | emojify | strip }}
+    {%- else -%}
+      <a class="news-title" href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a>
+    {%- endif -%}
+  </span>
+</li>
