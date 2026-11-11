@@ -13,6 +13,8 @@
   --global-heading-color: #18212b;
   --global-tint-color: #f1f7f7;
   --global-cornell-color: #b31b1b;
+  --global-emprise-color: #ffd29e;
+  --global-sia-color: #ffcdc8;
   --global-theme-color: #1d5c66;
   --global-hover-color: #1d5c66;
   --global-hover-text-color: #{$white-color};
@@ -88,6 +90,8 @@ html[data-theme="dark"] {
   --global-heading-color: #e8ecef;
   --global-tint-color: #17242a;
   --global-cornell-color: #f07f73;
+  --global-emprise-color: rgba(242, 166, 90, 0.38);
+  --global-sia-color: rgba(255, 140, 130, 0.34);
   --global-theme-color: #7cc3cc;
   --global-hover-color: #7cc3cc;
   --global-hover-text-color: #{$white-color};

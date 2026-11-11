@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My paper [Brick by Brick: Using Collaborative Robotics to Combat Social Isolation in Public Spaces](https://doi.org/10.1145/3776734.3794595) was accepted to HRI 2026's Student Design Challenge! See you in Edinburgh ✈️
+[Brick by Brick](https://doi.org/10.1145/3776734.3794595) was accepted to HRI 2026's Student Design Challenge! See you in Edinburgh ✈️

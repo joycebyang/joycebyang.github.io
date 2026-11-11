@@ -1,17 +1,10 @@
 ---
 ---
-{% comment %} Highlight entries where I am the first author {% endcomment %}
-{% assign first_author = entry.author_array | first %}
-{% assign first_author_last = first_author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
-{% assign is_first_author = false %}
-{% if site.scholar.last_name contains first_author_last and site.scholar.first_name contains first_author.first %}
-  {% assign is_first_author = true %}
-{% endif %}
 {% assign show_thumb = false %}
 {% if site.enable_publication_thumbnails and entry.preview %}
   {% assign show_thumb = true %}
 {% endif %}
-<div class="pub-row{% if is_first_author %} pub-first{% endif %}{% unless show_thumb %} pub-no-thumb{% endunless %}">
+<div class="pub-row{% unless show_thumb %} pub-no-thumb{% endunless %}">
   {% if show_thumb %}
     <div class="pub-thumb">
       {% if entry.preview contains '://' %}
@@ -164,7 +157,10 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% if entrytype_text == '' and entry.abbr %}
+    {% if entry.venue %}
+      {% comment %} Hand-written venue line from the bib `venue` field takes priority {% endcomment %}
+      {% capture periodical %}<em>{{ entry.venue }}</em>{% endcapture %}
+    {% elsif entrytype_text == '' and entry.abbr %}
       {% comment %} e.g. arXiv preprints with no booktitle: show the venue abbreviation instead {% endcomment %}
       {% capture periodical %}<em>{{ entry.abbr }}</em>{% endcapture %}
     {% else %}

@@ -1,0 +1,14 @@
+# Teaching entries shown at the bottom of the homepage, newest first.
+# Fields: term, course, role, org, instructor, description (optional)
+
+- term: Fall 2026
+  course: "CS 4750/5750: Foundations of Robotics"
+  role: Teaching Assistant
+  org: Cornell Bowers CIS
+  instructor: Dr. Tapomayukh Bhattacharjee
+
+- term: Spring 2026
+  course: "CS 3700: Foundations of AI Reasoning and Decision-Making"
+  role: Teaching Assistant
+  org: Cornell Bowers CIS
+  instructor: Dr. Kevin Ellis

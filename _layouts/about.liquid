@@ -44,8 +44,29 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="home-heading">Publications</h2>
-      <p class="pub-lead">Highlighted papers are ones where I am first author.</p>
+      <p class="pub-lead">* denotes equal contribution.</p>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Teaching (entries live in _data/teaching.yml) -->
+    {% if site.data.teaching %}
+      <h2 class="home-heading">Teaching</h2>
+      <ul class="teaching-list">
+        {% for t in site.data.teaching %}
+          <li>
+            <span class="teaching-term">{{ t.term }}</span>
+            <div>
+              <p class="teaching-course">{{ t.course }}</p>
+              <p class="teaching-meta">
+                {{ t.role }}{% if t.org %} · {{ t.org }}{% endif %}{% if t.instructor %} · Instructor: {{ t.instructor }}{% endif %}
+              </p>
+              {% if t.description %}
+                <p class="teaching-desc">{{ t.description }}</p>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
     {% endif %}
 
     <!-- Social -->

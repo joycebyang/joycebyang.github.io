@@ -119,16 +119,16 @@ body.fixed-top-nav {
 
 .home-photo {
   flex: none;
-  width: 104px;
-  height: 104px;
+  width: 128px;
+  height: 128px;
 
   figure {
     margin: 0;
   }
 
   img {
-    width: 104px;
-    height: 104px;
+    width: 128px;
+    height: 128px;
     object-fit: cover;
     border-radius: 12px;
   }
@@ -148,8 +148,34 @@ p.home-role {
   color: var(--global-text-color-light);
 }
 
-p.home-role span.cornell {
+.home-bio span.cornell {
   color: var(--global-cornell-color);
+}
+
+// Highlighter-style marks behind lab names (marker stroke over the lower ~60% of the line)
+.home-bio a.lab-emprise,
+.home-bio a.lab-sia {
+  --lab-mark: transparent;
+  color: var(--global-heading-color);
+  font-weight: 500;
+  padding: 0 0.15em;
+  margin: 0 -0.05em;
+  border-radius: 3px;
+  background: linear-gradient(transparent 38%, var(--lab-mark) 38%, var(--lab-mark) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  &:hover {
+    color: var(--global-heading-color);
+  }
+}
+
+.home-bio a.lab-emprise {
+  --lab-mark: var(--global-emprise-color);
+}
+
+.home-bio a.lab-sia {
+  --lab-mark: var(--global-sia-color);
 }
 
 .home-bio p {
@@ -181,7 +207,7 @@ h2.home-heading {
 
   li {
     display: grid;
-    grid-template-columns: 88px 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 16px;
     padding: 5px 0;
     font-size: 15px;
@@ -218,6 +244,55 @@ h2.home-heading {
   &[open] summary {
     display: none;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Teaching: term on the left (like news dates), course details on the right
+// ---------------------------------------------------------------------------
+
+.teaching-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    padding: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.teaching-term {
+  font-family: $slate-mono;
+  font-size: 13px;
+  color: var(--global-text-color-light);
+  padding-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+p.teaching-course {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--global-heading-color);
+  margin-bottom: 2px;
+}
+
+p.teaching-meta {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+p.teaching-desc {
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin-top: 4px;
 }
 
 // ---------------------------------------------------------------------------
@@ -275,10 +350,6 @@ p.pub-lead {
 
         &.pub-no-thumb {
           grid-template-columns: 1fr;
-        }
-
-        &.pub-first {
-          background-color: var(--global-tint-color);
         }
       }
 
@@ -397,8 +468,13 @@ footer.sticky-bottom {
 
   .home-photo,
   .home-photo img {
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
+  }
+
+  .teaching-list li {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   h1.home-name {

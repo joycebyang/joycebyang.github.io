@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Highlighted papers are ones where I am first author.
+description: "* denotes equal contribution."
 nav: true
 nav_order: 1
 ---
