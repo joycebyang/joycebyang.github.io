@@ -26,9 +26,9 @@ latest_posts:
 
 Hi! I'm a 4th year undergraduate student at <span class="cornell">Cornell University</span>, studying Computer Science and Business. Currently, I work with [Dr. Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) at [EmPRISE Lab](https://emprise.cs.cornell.edu/){: .lab-emprise} on physical human robot interaction and human in the loop methods. I also worked with [Dr. Somil Bansal](https://smlbansal.github.io/) in Stanford’s [SIA Lab](https://smlbansal.github.io/sia-lab/){: .lab-sia} on safety filtering for learning-based robotic systems.
 
-Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation.
+<!-- Previously, I worked on reinforcement learning for in-hand manipulation of bioinspired robots through the Science Internship Program at UC Santa Cruz, under the mentorship of [Dr. Michael Wehner](https://www.researchgate.net/profile/Michael-Wehner-2). I also interned at Stanford University’s [Robinson Lab](https://robinsonlab.stanford.edu/), where I studied gene expression in equine RNA-seq data to better understand cartilage degradation. -->
 
-<p class="home-links"><a href="https://scholar.google.com/citations?user=5RYnXIUAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/joyce-b-yang/">LinkedIn</a> &nbsp;/&nbsp; <a href="#">CV</a></p>
+<p class="home-links"><a href="https://scholar.google.com/citations?user=5RYnXIUAAAAJ&hl=en">🎓 Google Scholar</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/joyce-b-yang/">🔗 LinkedIn</a> &nbsp;/&nbsp; <a href="#">📄 CV</a></p>
 <!-- TODO: replace "#" above with the real CV link (e.g. /assets/pdf/cv.pdf once the PDF is added) -->
 
 
