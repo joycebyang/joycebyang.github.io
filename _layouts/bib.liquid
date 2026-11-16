@@ -4,7 +4,11 @@
 {% if site.enable_publication_thumbnails and entry.preview %}
   {% assign show_thumb = true %}
 {% endif %}
-<div class="pub-row{% unless show_thumb %} pub-no-thumb{% endunless %}">
+<div class="pub-row{% unless site.enable_publication_thumbnails %} pub-no-thumb{% endunless %}">
+  {% if site.enable_publication_thumbnails and show_thumb == false %}
+    {% comment %} No preview image yet (e.g. in submission): keep the column with a neutral placeholder {% endcomment %}
+    <div class="pub-thumb pub-thumb-empty" aria-hidden="true"></div>
+  {% endif %}
   {% if show_thumb %}
     <div class="pub-thumb">
       {% if entry.preview contains '://' %}

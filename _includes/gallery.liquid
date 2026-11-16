@@ -1,0 +1,84 @@
+{% comment %}
+  Photo gallery: a grid of folders (from _data/gallery.yml). Each folder opens a
+  popup panel (<dialog>) with its photos; clicking a photo enlarges it in the panel.
+  Behaviour lives in assets/js/gallery.js, styles in _sass/_slate.scss.
+{% endcomment %}
+
+<div class="gallery-folders">
+  {% for f in site.data.gallery %}
+    {% assign count = f.photos | size %}
+    <button type="button" class="folder-card" data-folder="{{ f.id }}" aria-haspopup="dialog">
+      <span class="folder" aria-hidden="true">
+        <span class="folder-back"></span>
+        {% if count == 0 %}
+          <span class="folder-peek folder-peek-1 folder-paper"></span>
+        {% else %}
+          {% for p in f.photos limit: 2 %}
+            <span class="folder-peek folder-peek-{{ forloop.index }}">
+              <img src="{{ '/assets/img/gallery/' | append: f.id | append: '/' | append: p.file | relative_url }}" alt="" loading="lazy">
+            </span>
+          {% endfor %}
+        {% endif %}
+        <span class="folder-front"></span>
+      </span>
+      <span class="folder-name">{{ f.title }}</span>
+      <span class="folder-count">{{ count }} photo{% if count != 1 %}s{% endif %}</span>
+    </button>
+  {% endfor %}
+</div>
+
+{% for f in site.data.gallery %}
+  {% assign count = f.photos | size %}
+  <dialog class="gallery-panel" id="gallery-{{ f.id }}" aria-labelledby="gallery-{{ f.id }}-title">
+    <div class="gallery-panel-inner">
+      <div class="gallery-panel-head">
+        <div>
+          <h2 class="gallery-panel-title" id="gallery-{{ f.id }}-title">{{ f.title }}</h2>
+          <p class="gallery-panel-count">{{ count }} photo{% if count != 1 %}s{% endif %}</p>
+        </div>
+        <button type="button" class="gallery-close" aria-label="Close {{ f.title }}">&times;</button>
+      </div>
+
+      {% if count > 0 %}
+        <div class="gallery-grid">
+          {% for p in f.photos %}
+            {% capture photo_src %}{{ '/assets/img/gallery/' | append: f.id | append: '/' | append: p.file | relative_url }}{% endcapture %}
+            <figure class="gallery-item">
+              <button
+                type="button"
+                class="gallery-thumb"
+                data-src="{{ photo_src }}"
+                data-caption="{{ p.caption | escape }}"
+                aria-label="Enlarge{% if p.caption %}: {{ p.caption | escape }}{% endif %}"
+              >
+                <img src="{{ photo_src }}" alt="{{ p.caption | default: f.title | escape }}" loading="lazy">
+              </button>
+              {% if p.caption %}
+                <figcaption>{{ p.caption }}</figcaption>
+              {% endif %}
+            </figure>
+          {% endfor %}
+        </div>
+
+        <div class="gallery-viewer" hidden>
+          <figure class="gallery-viewer-figure">
+            <img class="gallery-viewer-img" src="" alt="">
+            <figcaption class="gallery-viewer-cap"></figcaption>
+          </figure>
+          <div class="gallery-viewer-nav">
+            <button type="button" class="gallery-btn gallery-back">&larr; All photos</button>
+            <span class="gallery-viewer-controls">
+              <button type="button" class="gallery-btn gallery-prev" aria-label="Previous photo">&lsaquo; Prev</button>
+              <span class="gallery-viewer-pos"></span>
+              <button type="button" class="gallery-btn gallery-next" aria-label="Next photo">Next &rsaquo;</button>
+            </span>
+          </div>
+        </div>
+      {% else %}
+        <p class="gallery-empty">No photos yet.</p>
+      {% endif %}
+    </div>
+  </dialog>
+{% endfor %}
+
+<script src="{{ '/assets/js/gallery.js' | relative_url | bust_file_cache }}" defer></script>

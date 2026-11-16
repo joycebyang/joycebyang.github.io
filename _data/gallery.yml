@@ -1,0 +1,27 @@
+# Gallery folders shown on /gallery/, in this order.
+#
+# To add photos to a folder:
+#   1. Put the image files in assets/img/gallery/<id>/  (e.g. assets/img/gallery/rss-2026/poster.jpg)
+#   2. List them under that folder's `photos`, each with a `file` and an optional `caption`.
+# The first two photos also peek out of the folder icon.
+#
+# Example:
+#   photos:
+#     - file: poster.jpg
+#       caption: Presenting our poster
+
+- id: outside-the-lab
+  title: Outside the lab
+  photos: []
+
+- id: rss-2025
+  title: RSS 2025
+  photos: []
+
+- id: hri-2026
+  title: HRI 2026
+  photos: []
+
+- id: rss-2026
+  title: RSS 2026
+  photos: []
