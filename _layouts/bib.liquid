@@ -11,8 +11,21 @@
   {% endif %}
   {% if show_thumb %}
     <div class="pub-thumb">
+      {% assign preview_ext = entry.preview | split: '.' | last | downcase %}
       {% if entry.preview contains '://' %}
         <img class="preview" src="{{ entry.preview }}" alt="" loading="lazy">
+      {% elsif preview_ext == 'mp4' or preview_ext == 'webm' %}
+        <figure>
+          <video
+            class="preview"
+            src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </figure>
       {% else %}
         {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
         {%
@@ -21,7 +34,7 @@
           path=entry_path
           sizes="200px"
           class="preview"
-          zoomable=true
+          zoomable=false
           avoid_scaling=true
           alt=entry.preview
         %}
